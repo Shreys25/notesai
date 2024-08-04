@@ -30,6 +30,8 @@ environment:
 dependencies:
   flutter_bloc:
   cupertino_icons: ^1.0.6
+  flutter_gemini: ^2.0.4
+  dash_chat_2: ^0.0.21
   flutter:
     sdk: flutter
   http: ^1.2.2

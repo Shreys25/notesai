@@ -3,7 +3,7 @@ import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:http/http.dart' as http;
 import 'dart:convert';
 
-import '../models/notes_model.dart';
+import '../../../models/notes_model.dart';
 
 part 'notes_event.dart';
 part 'notes_state.dart';

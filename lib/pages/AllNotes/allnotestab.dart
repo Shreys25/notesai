@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
-import '../bloc/notes_bloc.dart';
-import '../models/notes_model.dart';
+import 'bloc/notes_bloc.dart';
+import '../../models/notes_model.dart';
 
 class AllNotesTab extends StatefulWidget {
   const AllNotesTab({super.key});

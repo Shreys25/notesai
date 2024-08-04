@@ -3,7 +3,7 @@ part of 'chat_bloc_bloc.dart';
 @immutable
 sealed class ChatBlocState {
   const ChatBlocState();
-  @override
+
   List<Object> get props => [];
 }
 

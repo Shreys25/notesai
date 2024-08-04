@@ -2,7 +2,6 @@ import 'package:dash_chat_2/dash_chat_2.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_gemini/flutter_gemini.dart';
-import 'package:notesai/core/constants/secrets.dart';
 part 'chat_bloc_event.dart';
 part 'chat_bloc_state.dart';
 

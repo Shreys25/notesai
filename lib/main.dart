@@ -1,13 +1,14 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:flutter_gemini/flutter_gemini.dart';
-import 'package:notesai/core/constants/secrets.dart';
+import 'package:flutter_dotenv/flutter_dotenv.dart';
 import 'package:notesai/pages/AiTab/bloc/chat_bloc_bloc.dart';
 import 'package:notesai/pages/AllNotes/bloc/notes_bloc.dart';
+import 'package:notesai/pages/HomeTab/bloc/appusage_bloc.dart';
 import 'package:notesai/pages/tabmanager.dart';
 
-void main() {
-  Gemini.init(apiKey: geminiAPIKey);
+void main() async {
+  await dotenv.load(fileName: '.env');
+  //print(dotenv.env['API_KEY']);
   runApp(const MyApp());
 }
 
@@ -25,6 +26,8 @@ class MyApp extends StatelessWidget {
         ),
         home: MultiBlocProvider(
           providers: [
+            BlocProvider(
+                create: (context) => AppusageBloc()..add(FetchUsageEvent())),
             BlocProvider(
               create: (context) => NotesBloc(),
             ),

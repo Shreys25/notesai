@@ -6,10 +6,10 @@ sealed class ChatBlocEvent {
   List<Object?> get props => [];
 }
 
-class SendMessage extends ChatBlocEvent {
+class SendMessageEvent extends ChatBlocEvent {
   final String message;
 
-  const SendMessage(this.message);
+  const SendMessageEvent(this.message);
 
   @override
   List<Object> get props => [message];

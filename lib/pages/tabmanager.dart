@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:notesai/pages/AiTab/aitab.dart';
 import 'package:notesai/pages/AllNotes/allnotestab.dart';
 import 'package:notesai/pages/daynotestab.dart';
-import 'package:notesai/pages/hometab.dart';
+import 'package:notesai/pages/HomeTab/hometab.dart';
 
 class TabManager extends StatefulWidget {
   const TabManager({super.key});
